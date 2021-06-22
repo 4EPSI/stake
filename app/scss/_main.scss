@@ -81,6 +81,10 @@
 		height: 40px;
 		border: none;
 		border-radius: 0;
+		&:hover {
+			color: rgb(177, 186, 211);
+    		// background: rgb(47 69 83);
+		}
 	}
 	&-btn {
 		&:nth-child(2) {
@@ -96,6 +100,22 @@
 				background: rgb(26, 44, 56);
 			}
 		}
+	}
+	&-input-profit {
+		width: 100%;
+		color: rgb(255, 255, 255);
+		background: rgb(47, 69, 83);
+		// box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px 0px, rgb(0 0 0 / 12%) 0px 1px 2px 0px;
+		border: 2px solid rgb(47, 69, 83);
+		border-radius: 0.25rem;
+		letter-spacing: 0px;
+		font-weight: 600;
+		transition: all 200ms ease-out 0s;
+		outline: 0px;
+		cursor: text;
+		height: 40px;
+		// appearance: none;
+		// padding: 0.5em 2em 0.5em 0.5em;
 	}
 	&-block-right {
 		background: #10212e;
