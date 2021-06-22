@@ -1,9 +1,62 @@
 <main class="main">
+	<div class="stake pt-5 pb-5">
 		<div class="container">
-			<div class="row">
-				<div class="col-4">1</div>
-				<div class="col-4">2</div>
-				<div class="col-4">3</div>
+			<div class="d-flex">
+				<div class="stake-block-left p-3">
+					<div class="d-flex mb-3">
+						<button class="stake-button button-manual" type="button">Manual</button>
+						<button class="stake-button button-auto" type="button">Auto</button>
+						<button class="stake-button button-plus" type="button">
+							<svg class="stake-svg" id="icon-bet-advanced" viewBox="0 0 32 32">
+								<path d="M20.33 23.935h-14.585l2.94-2.935-2.12-2.12-6.565 6.555 6.565 6.565 2.12-2.12-2.94-2.945h14.585c3.866 0 7-3.134 7-7v0h-3c0 2.209-1.791 4-4 4v0z"></path>
+								<path d="M11.67 8.065h14.585l-2.94 2.935 2.12 2.12 6.565-6.555-6.565-6.565-2.12 2.12 2.94 2.945h-14.585c-3.866 0-7 3.134-7 7v0h3c0-2.209 1.791-4 4-4v0z"></path>
+								<path d="M17.715 22v-4.285h4.285v-3.43h-4.285v-4.285h-3.43v4.285h-4.285v3.43h4.285v4.285h3.43z"></path>
+							</svg>
+
+						</button>
+					</div>
+					<div class="d-flex align-items-center justify-content-between mb-3">
+						<div class="d-flex align-items-center">
+							<div class="stake-text mr-1">Bet Amount</div>
+							<div class="color-info" data-toggle="tooltip" data-placement="bottom" title="Max Profit:5.00000000">
+								<i class="fas fa-info-circle"></i>
+							</div>
+						</div>
+						<div class="stake-text" data-toggle="tooltip" data-placement="bottom" title="0.00000000">$0.00</div>
+					</div>
+					<div class="d-flex">
+						<label for="">
+							<input id="betAmount" type="number" min="0" step="1e-8" data-currency="btc" data-analytics="bet-amount-input" color="neutral" class="styles__InputField-ix7z99-3 hkneAv" value="0.00000000">
+						</label>
+					</div>
+				</div>
+				<div class="stake-block-right p-3"></div>
 			</div>
+
+
+			<!-- <a class="checkout_social d-flex align-items-center justify-content-center ml-1" href="#" data-toggle="tooltip" data-placement="right" title="+777">
+				<i class="fab fa-twitter"></i>
+				<span class="checkout_social_text ml-1">Tweet</span>
+			</a> -->
+
+
+			<!-- <div class="stake-block-left d-flex">
+				<div class=" p-2">
+					<div class="d-flex">
+						<button class="stake-button button-manual" type="button">Manual</button>
+						<button class="stake-button button-auto" type="button">Auto</button>
+						<button class="stake-button button-plus" type="button">
+							<svg class="stake-svg" id="icon-bet-advanced" viewBox="0 0 32 32">
+								<path d="M20.33 23.935h-14.585l2.94-2.935-2.12-2.12-6.565 6.555 6.565 6.565 2.12-2.12-2.94-2.945h14.585c3.866 0 7-3.134 7-7v0h-3c0 2.209-1.791 4-4 4v0z"></path>
+								<path d="M11.67 8.065h14.585l-2.94 2.935 2.12 2.12 6.565-6.555-6.565-6.565-2.12 2.12 2.94 2.945h-14.585c-3.866 0-7 3.134-7 7v0h3c0-2.209 1.791-4 4-4v0z"></path>
+								<path d="M17.715 22v-4.285h4.285v-3.43h-4.285v-4.285h-3.43v4.285h-4.285v3.43h4.285v4.285h3.43z"></path>
+							</svg>
+
+						</button>
+					</div>
+				</div>
+				<div class=""></div>
+			</div> -->
 		</div>
-	</main>
+	</div>
+</main>
