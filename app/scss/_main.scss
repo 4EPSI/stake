@@ -117,6 +117,20 @@
 		// appearance: none;
 		// padding: 0.5em 2em 0.5em 0.5em;
 	}
+	&-btn-bet {
+		color: rgb(1, 62, 1);
+		background: rgb(31, 255, 32);
+		min-width: 300px;
+		font-weight: 600;
+		font-size: 14px;
+		border: none;
+		border-radius: 3px;
+		height: 50px;
+		&:hover {
+			color: rgb(1, 62, 1);
+			background: rgb(0, 184, 1);
+		}
+	}
 	&-block-right {
 		background: #10212e;
 		width: 100%;
