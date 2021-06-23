@@ -138,6 +138,7 @@
 		outline: 0px;
 		cursor: text;
 		height: 40px;
+		padding: 10px 30px 10px 10px;
 		// appearance: none;
 		// padding: 0.5em 2em 0.5em 0.5em;
 	}
@@ -151,6 +152,7 @@
 		border: none;
 		border-radius: 3px;
 		height: 50px;
+		cursor: pointer;
 		&:hover {
 			color: rgb(1, 62, 1);
 			background: rgb(0, 184, 1);
@@ -317,16 +319,21 @@
 			border-radius: 0 3px 3px 0;
 			// letter-spacing: 0px;
 			font-weight: 600;
+			padding: 10px 30px 10px 10px;
 			// transition: all 200ms ease-out 0s;
 			// outline: 0px;
 			// cursor: text;
 			// appearance: none;
 			// padding: 0.5em 2em 0.5em 0.5em;
-			&:focus {
+			&:focus,
+			&:hover {
 				color: rgb(255, 255, 255);
 				border-color: rgb(85, 112, 134);
 			}
 		}
+	}
+	.btn-color {
+		background: rgb(15, 33, 46);
 	}
 }
 
