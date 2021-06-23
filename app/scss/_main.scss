@@ -35,6 +35,14 @@
 		border-radius: 0 3px 3px 0;
 		background: #2f4553;
 	}
+	&-svg {
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		stroke-width: 0;
+		stroke: currentcolor;
+		fill: currentcolor;
+	}
 	&-text {
 		color: rgb(177, 186, 211);
 		font-weight: 600;
@@ -137,10 +145,56 @@
 		min-height: 630px;
 		border-bottom: 3px solid rgb(33, 55, 67);
 	}
+	&-block {
+		background: rgb(33, 55, 67);
+		width: 100%;
+		label {
+			position: relative;
+			width: calc(100% / 3);
+		}
+		&-input {
+			width: 100%;
+			color: rgb(255, 255, 255);
+			background: rgb(15, 33, 46);
+			// box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px 0px, rgb(0 0 0 / 12%) 0px 1px 2px 0px;
+			border: 2px solid rgb(47, 69, 83);
+			border-radius: 3px;
+			letter-spacing: 0px;
+			font-weight: 600;
+			transition: all 200ms ease-out 0s;
+			outline: 0px;
+			cursor: text;
+			appearance: none;
+			height: 40px;
+			// padding: 0.5em 2em 0.5em 0.5em;
+			padding: 10px 30px 10px 10px;
+			&:nth-child(2) {
+				cursor: pointer;
+				text-align: left;
+			}
+		}
+		&-svg {
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			stroke-width: 0;
+			stroke: currentcolor;
+			fill: currentcolor;
+			position: absolute;
+			top: 50%;
+			transform: translate(0px, 25%);
+			pointer-events: none;
+			color: rgb(177, 186, 211);
+			cursor: text;
+			right: 10px;
+		}
+		.svg {
+			transform-origin: center center;
+			transition: all 200ms ease-out 0s;
+			transform: translate(0px, 25%) rotate(180deg);
+		}
+	}
 }
-
-
-
 
 
 // .stake {
