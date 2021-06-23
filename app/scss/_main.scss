@@ -20,7 +20,7 @@
 		border: none;
 		&:hover {
 			color: rgb(177, 186, 211);
-			background: rgb(66, 90, 108);
+   			background: rgb(66, 90, 108);
 		}
 	}
 	.button-manual {
@@ -30,10 +30,18 @@
 		border-radius: 0;
 		background: #2f4553;
 		// border-right: 1px solid;
+		&:hover {
+			color: rgb(177, 186, 211);
+   		 	background: rgb(66, 90, 108);
+		}
 	}
 	.button-plus {
 		border-radius: 0 3px 3px 0;
 		background: #2f4553;
+		&:hover {
+			color: rgb(177, 186, 211);
+   		 	background: rgb(66, 90, 108);
+		}
 	}
 	&-svg {
 		display: inline-block;
@@ -107,6 +115,11 @@
 				bottom: 25%;
 				background: rgb(26, 44, 56);
 			}
+		}
+		&:hover {
+			color: rgb(177, 186, 211);
+			background: rgb(66, 90, 108);
+			border-radius: 0px;
 		}
 	}
 	&-input-profit {
