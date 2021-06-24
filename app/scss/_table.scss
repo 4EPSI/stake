@@ -149,6 +149,14 @@
         width: calc(100% / 3);
         padding: 10px;
     }
+    &-content-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .coin {
+        margin-left: 5px;
+    }
     // table {
     //     width: 100%;
     //     color: #acb5cf;
