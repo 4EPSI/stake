@@ -4,3 +4,22 @@
 	overflow: hidden;
     padding-top: 80px;
 }
+.roller {
+	&-table {
+		width: 100%;
+    	color: #acb5cf;
+    	font-size: 14px;
+		font-weight: 600;
+	}
+	&-th {
+		width: calc(100% / 6);
+        padding: 10px;
+	}
+}
+.item {
+	text-align: center;
+}
+.item-left {
+	text-align: end;
+}
+
