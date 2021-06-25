@@ -73,24 +73,71 @@
 	<main>
     <div class="stats">
         <div class="container">
-            <div class="stats-content" style="transform: translate(551px, 10px);">
-                <div class="stats-head p-1 d-flex justify-content-between">
-                    <div class="d-flex align-items-center" spacing="0.5"  direction="row">
-                        <svg class="stats-svg mr-2" id="icon-stats" viewBox="0 0 32 32">
+            <div class="stats-content">
+                <div class="stats-head">
+                    <div class="stats-head-content">
+                        <svg class="stats-svg svg img" id="icon-stats" viewBox="0 0 32 32">
                             <path d="M29.067 13.44v16.213h-5.253v-10.987zM20.16 22.347l-2.48 2.48-2.627-2.627v7.453h5.253v-7.453zM8.92 16.067l-2.413 2.413-0.213 0.187v10.96h5.253v-10.96zM32 5.44l-3.093-3.093-11.227 11.227-8.76-8.76-8.92 8.92 3.093 3.093 5.827-5.827 8.76 8.76z"></path>
                         </svg>
                         <div class="stats-text">Live Stats</div>
                     </div>
-                    <button class="stats-btn" type="button">
-                        <svg class="stats-svg" id="icon-cross" viewBox="0 0 32 32">
-                            <path d="M27.429 8l-3.429-3.429-8 8-8-8-3.429 3.429 8 8-8 8 3.429 3.429 8-8 8 8 3.429-3.429-8-8 8-8z"></path>
+                    <svg class="stats-svg img" id="icon-cross" viewBox="0 0 32 32">
+                        <path d="M27.429 8l-3.429-3.429-8 8-8-8-3.429 3.429 8 8-8 8 3.429 3.429 8-8 8 8 3.429-3.429-8-8 8-8z"></path>
+                    </svg>
+                    <!-- <button class="stats-btn" type="button">
+                    </button> -->
+                </div>
+                <div class="stats-body">
+                    <label class="stake-label" for="">
+                        <select name="strategySelection" color="neutral" class="stats-select stake-auto-btn">
+                            <option value="Delayed Martingale">All</option>
+                            <option value="Paroli">Race</option>
+                            <option value="D 'Alembert">Bets</option>
+                        </select>
+                    </label>
+                    <svg class="stats-svg" id="icon-rotate" viewBox="0 0 32 32">
+                        <path d="M6.733 14.573c0.674-4.55 4.553-8.002 9.238-8.002 2.373 0 4.539 0.885 6.185 2.344l-0.010-0.009 2.667-3.093c-2.339-2.005-5.402-3.226-8.75-3.226-6.918 0-12.619 5.212-13.391 11.923l-0.006 0.062h-2.667l4.56 6.48 4.573-6.48z"></path>
+                        <path d="M32 17.427l-4.56-6.48-4.573 6.48h2.467c-0.651 4.575-4.542 8.055-9.245 8.055-2.401 0-4.589-0.906-6.243-2.395l0.008 0.007-2.667 3.093c2.35 2.043 5.441 3.288 8.823 3.288 6.941 0 12.656-5.245 13.398-11.988l0.005-0.060z"></path>
+                    </svg>
+                </div>
+                <div class="stats-block">
+                    <div class="stats-block-left">
+                        <div class="stats-block-text">Profit</div>
+                        <div class="stats-block-content color">
+                            0.00000000
+                            <svg class="stats-svg coin" id="icon-currency-btc" viewBox="0 0 32 32">
+                                <path fill="#f7931a" style="fill: var(--color33, #f7931a)" d="M31.965 16.035c0 8.817-7.148 15.965-15.965 15.965s-15.965-7.148-15.965-15.965c0-8.817 7.148-15.965 15.965-15.965s15.965 7.148 15.965 15.965z"></path>
+                                <path fill="#fff" style="fill: var(--color9, #fff)" d="M23.175 14.060c0.31-2.090-1.28-3.215-3.46-3.965l0.705-2.835-1.72-0.43-0.7 2.76c-0.455-0.115-0.92-0.22-1.38-0.325l0.7-2.765-1.725-0.43-0.705 2.83c-0.375-0.085-0.745-0.17-1.1-0.26v0l-2.38-0.595-0.455 1.84s1.28 0.295 1.25 0.31c0.458 0.057 0.809 0.444 0.809 0.913 0 0.031-0.002 0.061-0.004 0.091l0-0.004-0.805 3.23c0.071 0.017 0.131 0.036 0.189 0.058l-0.009-0.003-0.18-0.045-1.13 4.5c-0.081 0.257-0.318 0.441-0.597 0.441-0.069 0-0.135-0.011-0.197-0.032l0.004 0.001s-1.255-0.31-1.255-0.31l-0.855 1.965 2.245 0.555 1.23 0.32-0.715 2.865 1.725 0.43 0.705-2.835c0.47 0.125 0.925 0.245 1.375 0.355l-0.705 2.825 1.725 0.43 0.71-2.86c2.945 0.555 5.155 0.33 6.085-2.33 0.75-2.14-0.035-3.375-1.585-4.18 1.13-0.24 1.975-0.985 2.205-2.515zM19.23 19.585c-0.53 2.145-4.135 1-5.305 0.695l0.945-3.78c1.17 0.275 4.92 0.855 4.36 3.085zM19.765 14.030c-0.5 1.95-3.5 0.955-4.46 0.715l0.86-3.44c0.97 0.24 4.105 0.695 3.6 2.725z"></path>
+                            </svg>
+                        </div>
+                        <div class="stats-block-text">Wagered</div>
+                        <div class="stats-block-content white">
+                            0.00000000
+                            <svg class="stats-svg coin" id="icon-currency-btc" viewBox="0 0 32 32">
+                                <path fill="#f7931a" style="fill: var(--color33, #f7931a)" d="M31.965 16.035c0 8.817-7.148 15.965-15.965 15.965s-15.965-7.148-15.965-15.965c0-8.817 7.148-15.965 15.965-15.965s15.965 7.148 15.965 15.965z"></path>
+                                <path fill="#fff" style="fill: var(--color9, #fff)" d="M23.175 14.060c0.31-2.090-1.28-3.215-3.46-3.965l0.705-2.835-1.72-0.43-0.7 2.76c-0.455-0.115-0.92-0.22-1.38-0.325l0.7-2.765-1.725-0.43-0.705 2.83c-0.375-0.085-0.745-0.17-1.1-0.26v0l-2.38-0.595-0.455 1.84s1.28 0.295 1.25 0.31c0.458 0.057 0.809 0.444 0.809 0.913 0 0.031-0.002 0.061-0.004 0.091l0-0.004-0.805 3.23c0.071 0.017 0.131 0.036 0.189 0.058l-0.009-0.003-0.18-0.045-1.13 4.5c-0.081 0.257-0.318 0.441-0.597 0.441-0.069 0-0.135-0.011-0.197-0.032l0.004 0.001s-1.255-0.31-1.255-0.31l-0.855 1.965 2.245 0.555 1.23 0.32-0.715 2.865 1.725 0.43 0.705-2.835c0.47 0.125 0.925 0.245 1.375 0.355l-0.705 2.825 1.725 0.43 0.71-2.86c2.945 0.555 5.155 0.33 6.085-2.33 0.75-2.14-0.035-3.375-1.585-4.18 1.13-0.24 1.975-0.985 2.205-2.515zM19.23 19.585c-0.53 2.145-4.135 1-5.305 0.695l0.945-3.78c1.17 0.275 4.92 0.855 4.36 3.085zM19.765 14.030c-0.5 1.95-3.5 0.955-4.46 0.715l0.86-3.44c0.97 0.24 4.105 0.695 3.6 2.725z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stats-block-right">
+                        <div class="stats-block-text">Wins</div>
+                        <div class="color zero">0</div>
+                        <div class="stats-block-text">Losses</div>
+                        <div class="red">0</div>
+                    </div>
+                </div>
+                <div class="stats-block-body">
+                </div>
+
+                <div class="stats-footer">
+                    <div class="stats-footer-content">
+                        <div class="stats-footer-price">$10,000 - 24 hours</div>
+                        <svg class="stats-svg img" id="icon-dropdown" viewBox="0 0 32 32">
+                            <path d="M16 25.801l-13.275-13.275 3.982-3.982 9.292 9.292 9.292-9.292 3.982 3.982-13.275 13.275z"></path>
                         </svg>
-                    </button>
-                    <!-- <div class="" direction="column" spacing="1">
-                        <div class="" direction="row"></div>
-                    </div> -->
-                    <div class="d-flex">
-                        <button class="" type="button"></button>
+                    </div>
+                    <div class="stats-footer-centr">
+                        Wager to enter the race!
                     </div>
                 </div>
             </div>
