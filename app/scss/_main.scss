@@ -8,10 +8,18 @@
 	background: #192c39;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	&-body,
+	&-cection-btn {
+		display: flex;
+	}
 	&-block-left {
 		background: rgb(33, 55, 67);
 		width: 300px;
 		padding: 10px;
+	}
+	&-block-button {
+		display: flex;
+		margin-bottom: 10px;
 	}
 	&-button {
 		font-weight: 600;
@@ -34,7 +42,7 @@
 		border-radius: 0;
 		background: #2f4553;
 		min-width: 98px;
-		// border-right: 1px solid;
+		border-right: 1px solid #293b48;
 		&:hover {
 			color: rgb(177, 186, 211);
    		 	background: rgb(66, 90, 108);
@@ -49,6 +57,9 @@
    		 	background: rgb(66, 90, 108);
 		}
 	}
+	.color-btn {
+		color: #69788b;
+	}
 	&-svg {
 		display: inline-block;
 		width: 1em;
@@ -57,14 +68,34 @@
 		stroke: currentcolor;
 		fill: currentcolor;
 	}
+	&-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 5px;
+	}
+	&-block-text {
+		display: flex;
+		align-items: center;
+	}
 	&-text {
 		color: rgb(177, 186, 211);
 		font-weight: 600;
 		font-size: 14px;
 	}
+	&-section-block {
+		display: flex;
+		margin-bottom: 10px;
+	}
 	.color-info {
 		color: rgb(177, 186, 211);
 		cursor: help;
+		margin-left: 5px;
+	}
+	&-profit {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
 	}
 	&-label {
 		position: relative;
@@ -95,6 +126,10 @@
 		height: 40px;
 		padding: 0.5em 2em 0.5em 0.5em;
 		border-right: none;
+		&:hover {
+			color: rgb(255, 255, 255);
+			border-color: rgb(85, 112, 134)
+		}
 	}
 	.btn-input {
 		// background: rgb(47 69 83);
@@ -161,6 +196,9 @@
 		border-radius: 3px;
 		height: 50px;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		&:hover {
 			color: rgb(1, 62, 1);
 			background: rgb(0, 184, 1);
@@ -171,6 +209,31 @@
 		width: 100%;
 		min-height: 500px;
 		border-bottom: 3px solid rgb(33, 55, 67);
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		border-radius: 0 3px 0 0;
+		// flex-grow: 1;
+		&-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			flex-grow: 1;
+		}
+		&-centr {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-grow: 1;
+		}
+		.panel {
+			display: flex;
+			padding: 5px;
+		}
+		.panel-text {
+			margin-bottom: 3px;
+		}
 	}
 	&-block {
 		background: rgb(33, 55, 67);
@@ -178,6 +241,10 @@
 		label {
 			position: relative;
 			width: calc(100% / 3);
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-input {
 			width: 100%;
@@ -198,6 +265,10 @@
 			&:nth-child(2) {
 				cursor: pointer;
 				text-align: left;
+			}
+			&:hover {
+				color: rgb(255, 255, 255);
+				border-color: rgb(85, 112, 134)
 			}
 		}
 		&-svg {
@@ -224,8 +295,13 @@
 			border-radius: 0px 0px 3px 3px;
 			background: center center / cover rgb(15, 33, 46);
 			color: rgb(213, 220, 235);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
 			&-content {
 				border-right: 1px solid rgb(47, 69, 83);
+				display: flex;
 			}
 			&-text {
 				font-weight: 600;

@@ -73,10 +73,10 @@
 	<main class="main">
 	<div class="stake">
 		<div class="container">
-			<div class="d-flex">
+			<div class="stake-body">
 				<div class="stake-block-left">
-					<div class="d-flex mb-3">
-						<button class="stake-button button-manual" type="button">Manual</button>
+					<div class="stake-block-button">
+						<button class="stake-button button-manual color-btn" type="button">Manual</button>
 						<button class="stake-button button-auto" type="button">Auto</button>
 						<button class="stake-button button-plus" type="button">
 							<svg class="stake-svg" id="icon-bet-advanced" viewBox="0 0 32 32">
@@ -84,19 +84,18 @@
 								<path d="M11.67 8.065h14.585l-2.94 2.935 2.12 2.12 6.565-6.555-6.565-6.565-2.12 2.12 2.94 2.945h-14.585c-3.866 0-7 3.134-7 7v0h3c0-2.209 1.791-4 4-4v0z"></path>
 								<path d="M17.715 22v-4.285h4.285v-3.43h-4.285v-4.285h-3.43v4.285h-4.285v3.43h4.285v4.285h3.43z"></path>
 							</svg>
-
 						</button>
 					</div>
-					<div class="d-flex align-items-center justify-content-between mb-1">
-						<div class="d-flex align-items-center">
-							<div class="stake-text mr-1">Bet Amount</div>
+					<div class="stake-info">
+						<div class="stake-block-text">
+							<div class="stake-text">Bet Amount</div>
 							<div class="color-info" data-toggle="tooltip" data-placement="bottom" title="Max Profit:5.00000000">
 								<i class="fas fa-info-circle"></i>
 							</div>
 						</div>
 						<div class="stake-text" data-toggle="tooltip" data-placement="bottom" title="0.00000000">$0.00</div>
 					</div>
-					<div class="d-flex mb-3">
+					<div class="stake-section-block">
 						<label class="stake-label" for="">
 							<input id="betAmount" type="number" min="0" step="1e-8" data-currency="btc" data-analytics="bet-amount-input" color="neutral" class="stake-input hkneAv" value="0.00000000">
 							<svg class="stake-coin-svg" id="icon-currency-btc" viewBox="0 0 32 32">
@@ -104,7 +103,7 @@
 								<path fill="#fff" style="fill: var(--color9, #fff)" d="M23.175 14.060c0.31-2.090-1.28-3.215-3.46-3.965l0.705-2.835-1.72-0.43-0.7 2.76c-0.455-0.115-0.92-0.22-1.38-0.325l0.7-2.765-1.725-0.43-0.705 2.83c-0.375-0.085-0.745-0.17-1.1-0.26v0l-2.38-0.595-0.455 1.84s1.28 0.295 1.25 0.31c0.458 0.057 0.809 0.444 0.809 0.913 0 0.031-0.002 0.061-0.004 0.091l0-0.004-0.805 3.23c0.071 0.017 0.131 0.036 0.189 0.058l-0.009-0.003-0.18-0.045-1.13 4.5c-0.081 0.257-0.318 0.441-0.597 0.441-0.069 0-0.135-0.011-0.197-0.032l0.004 0.001s-1.255-0.31-1.255-0.31l-0.855 1.965 2.245 0.555 1.23 0.32-0.715 2.865 1.725 0.43 0.705-2.835c0.47 0.125 0.925 0.245 1.375 0.355l-0.705 2.825 1.725 0.43 0.71-2.86c2.945 0.555 5.155 0.33 6.085-2.33 0.75-2.14-0.035-3.375-1.585-4.18 1.13-0.24 1.975-0.985 2.205-2.515zM19.23 19.585c-0.53 2.145-4.135 1-5.305 0.695l0.945-3.78c1.17 0.275 4.92 0.855 4.36 3.085zM19.765 14.030c-0.5 1.95-3.5 0.955-4.46 0.715l0.86-3.44c0.97 0.24 4.105 0.695 3.6 2.725z"></path>
 							</svg>
 						</label>
-						<div class="d-flex">
+						<div class="stake-cection-btn">
 							<button class="stake-btn stake-text btn-input" type="button">
 								½
 							</button>
@@ -114,16 +113,16 @@
 						</div>
 					</div>
 
-					<div class="d-flex align-items-center justify-content-between mb-1">
-						<div class="d-flex align-items-center">
-							<div class="stake-text mr-1">Profit on Win</div>
+					<div class="stake-info">
+						<div class="stake-block-text">
+							<div class="stake-text">Profit on Win</div>
 							<div class="color-info" data-toggle="tooltip" data-placement="bottom" title="Max Profit:5.00000000">
 								<i class="fas fa-info-circle"></i>
 							</div>
 						</div>
 						<div class="stake-text" data-toggle="tooltip" data-placement="bottom" title="0.00000000">$0.00</div>
 					</div>
-					<div class="d-flex flex-column mb-3">
+					<div class="stake-profit">
 						<label class="stake-label" for="">
 							<input readonly="" color="neutral" class="stake-input-profit" value="0.00000000">
 							<svg class="stake-coin-svg" id="icon-currency-btc" viewBox="0 0 32 32">
@@ -145,19 +144,19 @@
 					</svg> -->
 
 					<div>
-                        <a  class="stake-btn-bet d-flex align-items-center justify-content-center" data-test="auto-bet-button" data-analytics="auto-bet-button" data-autobet-status="start href="#">Bet</a>
+                        <a  class="stake-btn-bet" data-test="auto-bet-button" data-analytics="auto-bet-button" data-autobet-status="start href="#">Bet</a>
                     </div>
 
 					<!-- <button class="stake-btn-bet" type="button" data-test="bet-button" data-analytics="bet-button">
 						Bet
 					</button> -->
 				</div>
-				<div class="stake-block-right p-3 d-flex flex-column justify-content-center flex-grow-1">
-					<div class="d-flex justify-content-between align-items-center flex-column flex-grow-1">
-						<div class="d-flex justify-content-center align-items-center flex-grow-1">1</div>
-						<div class="stake-block p-2 d-flex">
-							<label class="mr-1" for="">
-								<div class="stake-text mb-1">Multiplier</div>
+				<div class="stake-block-right">
+					<div class="stake-block-right-content">
+						<div class="stake-block-right-centr">1</div>
+						<div class="stake-block panel">
+							<label for="">
+								<div class="stake-text panel-text">Multiplier</div>
 								<input
 									class="stake-block-input"
 									type="number"
@@ -169,8 +168,8 @@
 								</svg>
 
 							</label>
-							<label class="mr-1" for="">
-								<div class="stake-text mb-1">Roll Over</div>
+							<label for="">
+								<div class="stake-text panel-text">Roll Over</div>
 								<input
 									type="button"
 									target="50.5"
@@ -184,8 +183,8 @@
 								</svg>
 							</label>
 
-							<label class="mr-1" for="">
-								<div class="stake-text mb-1">Win Chance</div>
+							<label for="">
+								<div class="stake-text panel-text">Win Chance</div>
 								<input
 									type="number"
 									color="neutral"
@@ -225,8 +224,8 @@
 				</div>
 				<div class=""></div>
 			</div> -->
-			<div class="stake-block-bottom d-flex justify-content-between align-items-center p-3">
-				<div class="stake-block-bottom-content d-flex">
+			<div class="stake-block-bottom">
+				<div class="stake-block-bottom-content">
 					<button class="" type="button">
 						<svg id="icon-gear" viewBox="0 0 32 32">
 							<path d="M27.72 16c-0.006-0.683-0.064-1.347-0.17-1.995l0.010 0.075 4.080-3-3.56-6.16-4.627 2.027c-0.953-0.782-2.056-1.43-3.251-1.892l-0.082-0.028-0.56-5.027h-7.12l-0.56 5.027c-1.277 0.49-2.38 1.138-3.355 1.937l0.021-0.017-4.627-2.027-3.56 6.16 4.080 3c-0.096 0.573-0.154 1.237-0.16 1.914l-0 0.006c0.006 0.683 0.064 1.347 0.17 1.995l-0.010-0.075-4.080 3 3.56 6.16 4.627-2.027c0.953 0.782 2.056 1.43 3.251 1.892l0.082 0.028 0.56 5.027h7.12l0.56-5.027c1.277-0.49 2.38-1.138 3.355-1.937l-0.021 0.017 4.627 2.027 3.56-6.16-4.080-3c0.096-0.573 0.154-1.237 0.16-1.914l0-0.006zM16 20.333c-2.393 0-4.333-1.94-4.333-4.333s1.94-4.333 4.333-4.333c2.393 0 4.333 1.94 4.333 4.333v0c-0.008 2.39-1.943 4.326-4.333 4.333h-0.001z"></path>
