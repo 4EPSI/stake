@@ -10,11 +10,25 @@
         background: center center / cover rgb(15, 33, 46);
         color: rgb(213, 220, 235);
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    &-stake {
+        display: flex;
+        align-items: center;
     }
     &-text {
         font-weight: 600;
         font-size: 14px;
         color: rgb(255, 255, 255);
+        margin-right: 8px;
+    }
+    .dice {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .link {
         color: rgb(177, 186, 211);
@@ -25,6 +39,9 @@
         border-radius: 5px;
         color: rgb(213, 220, 235);
         background: rgb(47, 69, 83);
+        display: flex;
+        align-items: center;
+        padding: 5px;
     }
     &-svg {
         display: inline-block;
@@ -153,6 +170,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &-block-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
     .coin {
         margin-left: 5px;
