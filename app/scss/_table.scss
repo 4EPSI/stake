@@ -105,7 +105,8 @@
     .section-races {
         display: flex;
         align-items: baseline;
-        color: rgb(213, 220, 235);
+        // color: rgb(213, 220, 235);
+        color: #fff;
     }
     &-green {
         width: 8px;
