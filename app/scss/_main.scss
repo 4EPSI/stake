@@ -426,7 +426,62 @@
 	.btn-color {
 		background: rgb(15, 33, 46);
 	}
-	
+	&-styledbutton {
+		font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		// justify-content: center;
+		// align-items: center;
+		// transition: background 300ms ease 0s, opacity 300ms ease 0s, transform 100ms ease 0s;
+		// line-height: 1.5;
+		color: rgb(177, 186, 211);
+		background: rgb(47, 69, 83);
+		// padding: calc(0.5em + 2px) 1em;
+		// display: block;
+		font-size: 14px;
+		height: 44px;
+		border-radius: 3px;
+		margin: 4px;
+		border: 2px solid rgb(47, 69, 83);
+		// position: relative;
+		max-width: 40px;
+		// text-align: center;
+		width: 100%;
+		&:hover {
+			color: rgb(177, 186, 211);
+			background: rgb(66, 90, 108);
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			height: 6px;
+			width: 6px;
+			border-radius: 50%;
+			top: 3px;
+			right: 3px;
+			z-index: 1;
+			background-color: rgb(47, 69, 83);
+			animation-duration: 1000ms;
+		}
+		&-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			font-weight: 600;
+			font-size: 14px;
+			border-radius: 3px;
+			height: 40px;
+			color: rgb(255, 255, 255);
+			background: rgb(15, 33, 46);
+			&:hover {
+				color: rgb(213, 220, 235);
+			}
+		}
+	}
+	.item-link {
+		margin-bottom: 10px;
+	}
 	.btn {
 		width: 100%;
 		border: none;
