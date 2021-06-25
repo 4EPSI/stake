@@ -6,9 +6,12 @@
 }
 .stake {
 	background: #192c39;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	&-block-left {
 		background: rgb(33, 55, 67);
 		width: 300px;
+		padding: 10px;
 	}
 	&-button {
 		font-weight: 600;
