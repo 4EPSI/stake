@@ -246,7 +246,7 @@
 			width: calc(100% / 3);
 			margin-right: 5px;
 			&:last-child {
-				margin-right: 0;
+				margin-right: 0 !important;
 			}
 		}
 		&-input {
